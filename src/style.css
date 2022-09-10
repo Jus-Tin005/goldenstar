@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Poppins:ital@1&family=Quicksand:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
+
+/*@font-face {
+        font-family: Poppins-Regular;
+        src: local("Poppins-Regular"),
+             local("Poppins-Regular"),
+             url('./projectdatas/Website Datas/Fonts/Poppins-Regular.ttf') format(woff);
+}*/
+
+
+
+*{
+        box-sizing: border-box;
+}
+
+
+
+body {
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+}
+
+/*START HEADER SECTION*/
+
+/* Start Address bar  */
+.headers {
+        background-color: darkblue;
+        height: 50px;
+        line-height: 50px;
+        color: #fff;
+
+}
+
+.address-bar {
+        display: flex;
+        justify-content: space-between;
+
+}
+
+/* End Address bar  */
+
+/* Start Nav Bar  */
+.navbar-containers .navbar-brand img{  /* need here */
+        filter: opacity(35%);
+        -webkit-filter: opacity(35%);
+  }
+
+        body .navbar-light .navbar-toggler {
+        color: darkblue;
+        border-color: darkblue;
+      }
+
+.menu {
+        font-size: 18px;
+}
+
+.menu li a:hover {
+        color: darkblue;
+}
+
+/* End Nav Bar  */
+
+
+/* Start Banner  */
+
+.carousel {
+        position: relative;
+}
+
+.carousel-item {
+        text-align: center;
+        transform: translateY(-30%);
+        display: none;   /*js work here*/
+}
+
+
+.carousel-indicaors {
+        width: 100%;
+        /* width: 20%; */
+        text-align: center;
+        /* background-color: green; */
+        background: linear-gradient(transparent);
+        padding: 20px;
+
+        position: absolute;
+        left: 50%;                  /*center*/
+        bottom: 0;
+
+        transform: translate(-50%); /*center*/
+
+        z-index: 1;
+
+}
+
+
+
+.dot {
+        width: 8px;
+        height: 8px;
+        background-color: #bbb;
+        border-radius: 50%;
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 1px;
+
+        cursor: pointer;
+
+        transition: background-color 0.6s ease-in;
+}
+
+
+.dot:hover, .active {   /*js work here*/
+        background-color: darkblue;
+}
+
+
+
+.carousel-control-prev, .carousel-control-next {
+        /* background-color: green; */
+        color: #bbb;
+        font-size: 25px;
+        padding: 20px;
+
+
+        position: absolute;
+        /* left: 0; */  /* not ok by two left*/
+        top: 50%;                    /*center*/
+        transform: translateY(-10%); /*center*/
+}
+
+
+
+.carousel-control-prev {
+        left: 0;
+}
+
+.carousel-control-next {
+        right: 0;
+}
+
+
+.carousel-control-prev:hover{
+        color:darkblue;
+        animation:forLeft 0.5s infinite alternate;
+    }
+
+    .carousel-control-next:hover{
+        color:darkblue;
+        animation:forRight 0.5s infinite alternate;
+    }
+
+    @keyframes forLeft{
+        from{
+            left:0;
+            opacity:0.5;
+        }
+        to{
+            left:10px;
+            opacity:1;
+        }
+    }
+
+    @keyframes forRight{
+        from{
+            right:0;
+            opacity:0.5;
+        }
+        to{
+            right:10px;
+            opacity:1;
+        }
+    }
+
+
+.banner-one, .banner-two, .banner-three {
+        height: 70vh;
+}
+/* End Banner  */
+
+
+/*END HEADER SECTION*/
+
+
+/* START OUR GOAL SECTION  */
+
+/* END OUR GOAL SECTION  */
+
+
+
+/* START WELCOME SECTION  */
+.welcomes {
+        background-image: url('../projectdatas/websitedatas/sliders/slider-2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+}
+
+.welcomes a {
+        background-color: darkblue;    /*can't invock btn directly,just can invock a tag only to oerwrite bootstrap bg-color.*/
+        color: #fff;
+}
+
+/* END WELCOME SECTION  */
+
+
+/* START OUR PROJECTS SECTION  */
+.project-images {
+        text-align: center;
+        }
+
+.project-images img {
+      width: 250px;
+      height: 250px;
+      cursor: pointer;
+      transition: opacity .3s;
+}
+
+.project-images:hover {
+        opacity: 0.6;
+}
+
+
+/* END OUR PROJECTS SECTION  */
+
+
+/* START FOOTER SECTION  */
+.footers {
+        background-color: #2C3E50;
+        color: #fff;
+}
+
+.sub-footers {
+        transform: translateX(30px);
+
+}
+
+.sub-footers ul li {
+        list-style: none;
+}
+
+.sub-footers ul li a {
+        text-decoration: none;
+}
+
+.copy-rights {
+        height: 50px;
+        background-color: darkblue;
+        text-align: center;
+        line-height: 50px;
+
+}
+/* END FOOTER SECTION  */
